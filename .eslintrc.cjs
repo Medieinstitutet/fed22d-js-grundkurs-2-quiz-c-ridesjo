@@ -23,6 +23,7 @@ module.exports = {
     sourceType: 'module',
   },
   rules: {
+    linebreak: ['error', 'windows'],
     curly: ['error', 'all'],
     indent: ['error', 2, { SwitchCase: 1 }],
     'max-len': ['error', { code: 120 }],
