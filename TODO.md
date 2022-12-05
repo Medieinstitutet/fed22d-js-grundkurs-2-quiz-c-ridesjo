@@ -1,7 +1,6 @@
 <!------ Pseudokod----------
 
-
-Text
+Starttext
 Välj kategori för att komma vidare
 
 Text
@@ -23,4 +22,11 @@ Visa highscore + namn (ev. ranking)
 Välj "Spela igen" eller stäng fönstret uppe i krysset.
 Nollställ - starta om spelet.
 
- -->
+
+
+
+
+    <!-- TODO
+    - Validera HTML (kopiera den renderade HTML-koden): https://validator.w3.org/#validate_by_input
+    - Kontrollera tillgänglighet: https://www.a11yproject.com/checklist/ & Chrome Lighthouse/Firefox Accessibility Tools
+    - Validera genererade CSS: https://jigsaw.w3.org/css-validator/#validate_by_input
