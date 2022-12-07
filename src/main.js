@@ -1,9 +1,9 @@
 import 'style.scss';
 
 const gameDescText = 'Välkommen till vårt familje-quiz!';
-const descriptionText = document.querySelector('#descriptionText');
+const gameDescription = document.querySelector('#gameDescription');
 
-descriptionText.innerHTML = gameDescText;
+gameDescription.innerHTML = gameDescText;
 
 document.querySelector('#startGameBtn').addEventListener('click', startGame);
 
@@ -20,67 +20,96 @@ const questions = [
     correctAnswer: 'Ida',
 },
 {
-    questionText: 
+    questionText: 'Vad heter Ronja Rövardotters vän?'
     answerOptions: [
-        '',
-        '',
-        ''
+        'Birk',
+        'Bark',
+        'Burk'
     ],
-    correctAnswer: '',
+    correctAnswer: 'Birk',
 },
 {
-    questionText: 
+    questionText: 'Vad heter årets julkalender?'
     answerOptions: [
-        '',
-        '',
-        ''
+        'Prinskorven som försvann',
+        'Kronprinsen som försvann',
+        'Kronan som försvann'
     ],
-    correctAnswer: '',
+    correctAnswer: 'Kronprinsen som försvann',
 },
 {
-    questionText: 
+    questionText: 'Vad bor Svampbob Fyrkant i?'
     answerOptions: [
-        '',
-        '',
-        ''
+        'En ubåt',
+        'En ananas',
+        'En snäcka'
     ],
-    correctAnswer: '',
+    correctAnswer: 'En ananas',
 },
 {
-    questionText: 
+    questionText: 'Vad förvandlas Chihiros föräldrar till i början av Spirited away?'
     answerOptions: [
-        '',
-        '',
-        ''
+        'Grisar',
+        'Kor',
+        'Getter'
     ],
-    correctAnswer: '',
+    correctAnswer: 'Grisar',
 },
 {
-    questionText: 
+    questionText: 'Vilken färg har huvudpersonen i Megamind?'
     answerOptions: [
-        '',
-        '',
-        ''
+        'Röd',
+        'Grön',
+        'Blå'
     ],
-    correctAnswer: '',
+    correctAnswer: 'Blå',
 },
 {
-    questionText: 
+    questionText: 'Vilket djur är bussen i Totoro?'
     answerOptions: [
-        '',
-        '',
-        ''
+        'Kanin',
+        'Hund',
+        'Katt'
     ],
-    correctAnswer: '',
+    correctAnswer: 'Katt',
 },
 {
-    questionText: 
+    questionText: 'Vilket spöke är hungrigast i Spookys?'
     answerOptions: [
-        '',
-        '',
-        ''
+        'Gulp',
+        'Freezy',
+        'Splash'
     ],
-    correctAnswer: '',
+    correctAnswer: 'Gulp',
+},
+{
+    questionText: 'Vad har Harry Potter för husdjur?'
+    answerOptions: [
+        'En orange katt',
+        'En grön orm',
+        'En vit uggla'
+    ],
+    correctAnswer: 'En vit uggla',
+},
+{
+    questionText: 'Vad heter det gröna trollet?'
+    answerOptions: [
+        'Booba',
+        'Shrek',
+        'Trolle'
+    ],
+    correctAnswer: 'Shrek',
 },
     
-]
+];
+
+function startGame() {
+    console.log('startGame');
+
+    player = document.querySelector('#playerInput').value;
+
+    gameDescription.style.display = 'none';
+    document.querySelector('#player').style.display = 'none';
+
+    nextQuestion();
+}
