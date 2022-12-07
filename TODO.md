@@ -1,9 +1,7 @@
 <!------ Pseudokod----------
 
-Starttext
 Välj kategori för att komma vidare
 
-Text
 Skriv ditt namn
 Välj "Starta"
 
@@ -18,8 +16,8 @@ Välj "Nästa fråga" fram till sista frågan.
 Vid sista frågan välj "Visa resultat".
 
 Visa poäng + meddelande beroende på poäng.
-Visa highscore + namn (ev. ranking)
-Välj "Spela igen" eller stäng fönstret uppe i krysset.
+Visa highscore + namn 
+Välj "Spela igen" eller stäng fönstret uppe i krysset för att avsluta.
 Nollställ - starta om spelet.
 
 
