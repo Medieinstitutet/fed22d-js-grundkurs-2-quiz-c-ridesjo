@@ -7,13 +7,36 @@
     <title>Projekt</title>
   </head>
   <body>
-    <main>
-      <div class="app" id="app"></div> <!-- TODO: går bra att radera -->
-      <!-- TODO: skriv din kod här, innan script-taggen -->
+    <main>      
+      <h1>Family quiz</h1>
+      <div id="descriptionText"></div> 
+
+      <div id="player">
+        <label>
+          Skriv ditt namn: <input type="text" id="playerNameInput" value=" ">
+        </label>
+        <button id="startGameBtn">Starta</button>
+      </div>
+
+      <div id="questionContainer">
+        <div id="questionText"></div>
+        <button id="answer1"></button>
+        <button id="answer2"></button>
+        <button id="answer3"></button>
+      </div>
+
+      <div id="gameOver" class="hidden">
+        Spelet är slut!
+        <p id="pointsContainer"></p>
+        <p>
+          <button id="restartGameBtn">Spela igen</button>
+        </p>
+      </div>
+
     </main>
 
 
-   
-    <script type="module" src="/src/main.ts"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+    <script type="module" src="/src/main.js"></script>
   </body>
 </html>

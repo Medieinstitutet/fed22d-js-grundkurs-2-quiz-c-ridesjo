@@ -1,4 +1,4 @@
-import './style/style.scss';
+/*
 
 // All kod härifrån och ner är bara ett exempel för att komma igång
 
@@ -16,7 +16,7 @@ const myShuffledCardDeck = shuffle(exampleCardDeck);
  * @param this - Det HTML-element som har klickats på
  * @return {void}
  */
-function flipCard(this: HTMLElement): void {
+/*function flipCard(this: HTMLElement): void {
   if (this !== undefined) {
     this.classList.toggle('visible');
   }
@@ -37,3 +37,4 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = cardString;
 document.querySelectorAll('.card').forEach((card) => {
   card.addEventListener('click', flipCard);
 });
+*/
