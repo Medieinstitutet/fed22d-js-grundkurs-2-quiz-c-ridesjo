@@ -2,45 +2,65 @@
 <html lang="sv">
 
 <head>
-  <meta charset="UTF-8">
+  <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="theme-color" content="#226DAA">
+  <meta name="description" content="A quiz">
+  <meta property="og:title" content="FamiljeQuizzet">
+  <meta property="og:type" content="A quiz for the family">
   <link rel="icon" type="image/ico" href="/favicon.ico">
-  <link rel="stylesheet" href="style/style.css" type="text/css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Kanit&display=swap">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Projekt</title>
 </head>
 
 <body>
   <main>
-    <h1>Family quiz</h1>
-    <div id="descriptionText"></div>
+    <h1>FamiljeQuizzet</h1>
+    <section class="frontPage">
+      <div id="categoryContainer" class="categoryContainer">
+        <div id="categoryText" class="categoryText">Välj kategori!</div>
+        <button id="choice1" class="choice1">Film</button>
+        <button id="choice2" class="choice2">Musik</button>
+        <button id="choice3" class="choice3">Familj</button>
+      </div>
+    </section>
 
-    <div id="player">
-      <label>
-        Skriv ditt namn: <input type="text" id="playerInput" value=" ">
-      </label>
-      <button id="startGameBtn">Starta</button>
+    <div class="startGamePage">
+      <div id="player" class="player">
+        <div id="showChoice" class="showChoice"></div>
+        <label>
+          Skriv ditt namn:<br><input type="text" id="playerInput" class="playerInput" value=" "><br>
+        </label>
+        <button id="startGameBtn" class="startGameBtn">Starta</button>
+      </div>
     </div>
 
-    <div id="questionContainer">
-      <div id="questionText"></div>
-      <button id="answer1"></button>
-      <button id="answer2"></button>
-      <button id="answer3"></button>
-    </div>
+    <section class="questionPage">
+      <div id="questionsContainer" class="questionsContainer">
+        <div id="questionText" class="questionText"></div> <!--Frågor-->
+        <div id="answerContainer" class="answerContainer">
+          <button id="answer1" class="answer1"></button>
+          <button id="answer2" class="answer2"></button>
+          <button id="answer3" class="answer3"></button>
+        </div>
+      </div>
+      <div class="buttons"></div>
+
+      <button id="nextQuestBtn" class="nextQuestBtn">Nästa fråga</button>
+      <button id="resultBtn" class="resultBtn">Visa resultat</button>
+<!--       <div class="timeContainer">
+        <span id="showTime" class="showTime">Återstående tid</span>
+        <span id="timer" class="timer">00:00</span>
+      </div> -->
+    </section>
 
     <div id="gameOver" class="hidden">
-      Spelet är slut!
-      <p id="pointsContainer"></p>
-      <p>
-        <button id="restartGameBtn">Spela igen</button>
-      </p>
+      <p id="pointsContainer" class="pointsContainer"></p><br>
+      <p class="pointsMess"></p>  
+      <button id="restartGameBtn" class="restartGameBtn">Spela igen</button>
     </div>
-
+    <script type="module" src="src/main.js"></script>
   </main>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
-  <script type="module" src="/src/main.js"></script>
 </body>
 
 </html>
